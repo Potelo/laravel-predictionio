@@ -1,0 +1,29 @@
+{
+  "license": "MIT",
+  "name": "potelo/laravel-predictionio",
+  "description": "Laravel wrapper for PredictionIO v0.9.*",
+  "keywords": [
+    "laravel",
+    "predictionio",
+    "machine learning",
+    "wrapper",
+    "api"
+  ],
+  "authors": [
+    {
+      "name": "Bruno Cabral",
+      "email": "bruno@potelo.com.br",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "illuminate/support": "5.*",
+    "predictionio/predictionio": "0.9.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Potelo\\LaravelPredictionIO\\": "src"
+    }
+  },
+  "minimum-stability": "dev"
+}
