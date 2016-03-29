@@ -25,22 +25,23 @@ $ composer require "potelo/laravel-predictionio:0.1.*@dev"
 * Add a **provider** in `app/config/app.php`:
 
 ```php
-    'Potelo\LaravelPredictionIO\PredictionIOServiceProvider',
+    Potelo\LaravelPredictionIO\Provider\PredictionIOServiceProvider::class
 ```
 
 * Add an **alias** in `app/config/app.php`:
 
 ```php
-    'EngineClient'      => 'Potelo\LaravelPredictionIO\Facades\EngineFacade',
-    'EventClient'       => 'Potelo\LaravelPredictionIO\Facades\EventFacade',
+    'EngineClient'      => Potelo\LaravelPredictionIO\Facades\EngineFacade::class,
+        'EventClient'       => Potelo\LaravelPredictionIO\Facades\EventFacade::class,
 ```
 
 * Define your [PredictionIO API endpoint](http://docs.prediction.io/current/tutorials/quickstart-php.html#add-your-app-to-predictionio) in `app/config/services.php`:
 
 ```php
-	'predictionio' => array(
+	'predictionio' => [
 		'key' => '0250b3f85ce33284f77c77f36b41010ef2c4fc5c',
-	),
+		'url' => 'http://localhost:7200'
+	],
 ```
 
 

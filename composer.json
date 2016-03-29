@@ -18,8 +18,9 @@
   ],
   "require": {
     "illuminate/support": "5.*",
-    "predictionio/predictionio": "0.9.*"
+    "predictionio/predictionio": "0.8.*"
   },
+  
   "autoload": {
     "psr-4": {
       "Potelo\\LaravelPredictionIO\\": "src"
