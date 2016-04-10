@@ -34,7 +34,7 @@ class PredictionIOServiceProvider extends ServiceProvider {
         });
         $this->app['engineclient'] = $this->app->share(function($app)
         {
-            return new EngineClient();
+            return new EngineClient(Config::get('services.predictionio.engine_url'));
         });
 
 
