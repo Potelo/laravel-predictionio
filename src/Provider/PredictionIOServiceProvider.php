@@ -28,12 +28,11 @@ class PredictionIOServiceProvider extends ServiceProvider {
      */
     public function register()
     {
-        $this->app['eventclient'] = $this->app->share(function($app)
-        {
+        $this->app->singleton('eventclient', function ($app) {
             return new EventClient(Config::get('services.predictionio.key'), Config::get('services.predictionio.url'));
         });
-        $this->app['engineclient'] = $this->app->share(function($app)
-        {
+
+        $this->app->singleton('engineclient', function ($app) {
             return new EngineClient(Config::get('services.predictionio.engine_url'));
         });
 
