@@ -18,7 +18,7 @@
   ],
   "require": {
     "illuminate/support": "^5.0|^6.0|^7.0|^8.0",
-    "predictionio/predictionio": "0.9.*"
+    "predictionio/predictionio": "0.13.*"
   },
   
   "autoload": {
